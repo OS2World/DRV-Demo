@@ -1,0 +1,8 @@
+DEM
+DEM0000I:
+DEM0001I: зддддддддддддддддддддддддддддддддддддддддддддддддддд©
+DEM0002I: Ё  $DEMO - OS/2 Demonstration Device Device Driver  Ё
+DEM0003I: Ё  Author:Dennis Rowe - 1991          Version %1.%2  Ё
+DEM0004I: юддддддддддддддддддддддддддддддддддддддддддддддддддды
+DEM0005I: Press Enter to continue.
+

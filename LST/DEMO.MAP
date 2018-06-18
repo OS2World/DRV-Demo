@@ -1,0 +1,158 @@
+
+ demo
+
+ Start     Length     Name                   Class
+ 0001:0000 0001EH     NULL                   BEGDATA
+ 0001:001E 00028H     _DATA                  DATA
+ 0001:0046 00000H     CONST                  CONST
+ 0001:0046 00000H     FAR_BSS                FAR_BSS
+ 0001:0046 0000AH     _BSS                   BSS
+ 0001:0050 000FFH     c_common               BSS
+ 0001:0150 00000H     BUFFERS                LAST_DATA
+ 0001:0150 00000H     LAST_D                 LAST_DATA
+ 0002:0000 00632H     MAINSEG                CODE
+ 0002:0632 001A7H     _TEXT                  CODE
+ 0002:07DA 00000H     END_TEXT               CODE
+ 0003:0000 005AEH     KEEPSEG                CODE
+ 0004:0000 003D0H     INITSEG                CODE
+ 0005:0000 00000H     C_ETEXT                ENDCODE
+ 0005:0000 0002CH     _MSGSEG                MSGSEGCODE
+
+ Origin   Group
+ 0002:0   CGROUP
+ 0001:0   DGROUP
+ 0005:0   MESSAGES
+
+  Address         Publics by Name
+
+ 0005:0010       DOSGETMESSAGE
+ 0000:0000  Imp  DOSPUTMESSAGE        (MSG.1)
+ 0000:0000  Imp  DOSREAD              (DOSCALLS.137)
+ 0000:0000  Imp  DOSTRUEGETMESSAGE    (MSG.2)
+ 0001:0000       HEADER
+ 0005:002A       MSGSEGDATA
+ 0003:0195       _alloc_big_mem
+ 0003:00DE       _alloc_gdt_mem
+ 0003:0129       _alloc_mem
+ 0003:0000       _bad_cmd
+ 0002:0353       _block
+ 0002:02DB       _curr_time
+ 0001:001A       _DEVHLP
+ 0002:0548       _dev_done
+ 0002:059E       _dev_help
+ 0004:0122       _DEV_HELP1
+ 0002:059A       _DEV_HLPCS
+ 0002:0223       _DISABLE_IRPT
+ 0002:0221       _ENABLE_IRPT
+ 0002:0467       _EOI
+ 0003:020E       _free_mem
+ 0003:046A       _free_virt
+ 0003:0016       _get_gdt_slots
+ 0003:025C       _get_phys_addr
+ 0003:02C5       _get_phys_addr1
+ 0001:003A       _initialized
+ 0004:0000       _init_mod
+ 0002:03FF       _internal_error
+ 0002:020A       _IN_PORT
+ 0001:003C       _in_unlock
+ 0002:0680       _itoa
+ 0002:07DA       _LAST_C
+ 0001:0150       _LAST_D
+ 0003:0388       _lock
+ 0001:003E       _lock_count
+ 0004:01A4       _make_msg_fname
+ 0001:0050       _msg_file
+ 0002:0215       _OUT_PORT
+ 0003:006A       _phys_to_gdt
+ 0003:053B       _phys_to_ldt
+ 0003:04C8       _phys_to_ldt1
+ 0002:0275       _point_to_global
+ 0004:023F       _prt_msg
+ 0002:04F1       _pull_part_req_pkt
+ 0002:049A       _push_req_pkt
+ 0002:0225       _REAL_MODE
+ 0002:0000       _STRATEGY
+ 0002:0014       _STRATEGY_C
+ 0002:069C       _strchr
+ 0002:0632       _strcpy
+ 0002:0668       _strlen
+ 0002:06CA       _strtok
+ 0002:0241       _TO_PROT_MODA
+ 0002:024A       _to_prot_mode
+ 0002:0239       _to_real_moda
+ 0002:03B7       _unblock
+ 0003:03F3       _unlock
+ 0003:032E       _verify_acc
+ 0002:02F9       _yield
+ 0002:0008       __CHKSTK
+ 0002:0776       __cltoasub
+ 0002:0783       __cxtoa
+
+  Address         Publics by Value
+
+ 0000:0000  Imp  DOSPUTMESSAGE        (MSG.1)
+ 0000:0000  Imp  DOSREAD              (DOSCALLS.137)
+ 0000:0000  Imp  DOSTRUEGETMESSAGE    (MSG.2)
+ 0001:0000       HEADER
+ 0001:001A       _DEVHLP
+ 0001:003A       _initialized
+ 0001:003C       _in_unlock
+ 0001:003E       _lock_count
+ 0001:0050       _msg_file
+ 0001:0150       _LAST_D
+ 0002:0000       _STRATEGY
+ 0002:0008       __CHKSTK
+ 0002:0014       _STRATEGY_C
+ 0002:020A       _IN_PORT
+ 0002:0215       _OUT_PORT
+ 0002:0221       _ENABLE_IRPT
+ 0002:0223       _DISABLE_IRPT
+ 0002:0225       _REAL_MODE
+ 0002:0239       _to_real_moda
+ 0002:0241       _TO_PROT_MODA
+ 0002:024A       _to_prot_mode
+ 0002:0275       _point_to_global
+ 0002:02DB       _curr_time
+ 0002:02F9       _yield
+ 0002:0353       _block
+ 0002:03B7       _unblock
+ 0002:03FF       _internal_error
+ 0002:0467       _EOI
+ 0002:049A       _push_req_pkt
+ 0002:04F1       _pull_part_req_pkt
+ 0002:0548       _dev_done
+ 0002:059A       _DEV_HLPCS
+ 0002:059E       _dev_help
+ 0002:0632       _strcpy
+ 0002:0668       _strlen
+ 0002:0680       _itoa
+ 0002:069C       _strchr
+ 0002:06CA       _strtok
+ 0002:0776       __cltoasub
+ 0002:0783       __cxtoa
+ 0002:07DA       _LAST_C
+ 0003:0000       _bad_cmd
+ 0003:0016       _get_gdt_slots
+ 0003:006A       _phys_to_gdt
+ 0003:00DE       _alloc_gdt_mem
+ 0003:0129       _alloc_mem
+ 0003:0195       _alloc_big_mem
+ 0003:020E       _free_mem
+ 0003:025C       _get_phys_addr
+ 0003:02C5       _get_phys_addr1
+ 0003:032E       _verify_acc
+ 0003:0388       _lock
+ 0003:03F3       _unlock
+ 0003:046A       _free_virt
+ 0003:04C8       _phys_to_ldt1
+ 0003:053B       _phys_to_ldt
+ 0004:0000       _init_mod
+ 0004:0122       _DEV_HELP1
+ 0004:01A4       _make_msg_fname
+ 0004:023F       _prt_msg
+ 0005:0010       DOSGETMESSAGE
+ 0005:002A       MSGSEGDATA
+
+Segments              15
+Groups                3
+Bytes in symbol table  6155

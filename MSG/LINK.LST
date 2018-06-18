@@ -1,0 +1,76 @@
+
+Linker/2  Version 1.30
+Copyright IBM Corporation 1983, 1990
+Copyright Microsoft Corp 1983, 1990.  All rights reserved.
+
+Object Modules [.OBJ]: .\obj\demo+
+Object Modules [.OBJ]: /map /Info /NOD /NOP
+Run File [demo.EXE]: demo
+List File [E:demo.MAP]: .\lst\demo.map
+Libraries [.LIB]: demo+llibce+os2
+Definitions File [NUL.DEF]: demo.def
+**** PARSE DEFINITIONS FILE ****
+**** PASS ONE ****
+.\obj\demo.OBJ(.\src\demo.ASM)
+**** LIBRARY SEARCH ****
+demo.LIB(.\src\strategy.c)
+demo.LIB(.\src\asmutils.ASM)
+demo.LIB(.\src\badcmd.c)
+demo.LIB(.\src\ddutils.c)
+demo.LIB(.\src\init.c)
+demo.LIB(.\src\devhlp.ASM)
+demo.LIB(.\src\gdtmem.c)
+demo.LIB(.\src\lock.c)
+demo.LIB(.\src\ldtmem.c)
+demo.LIB(.\src\prtmsg.c)
+D:\LIB\llibce.LIB(strcpy.asm)
+D:\LIB\llibce.LIB(strlen.asm)
+D:\LIB\llibce.LIB(itoa.asm)
+D:\LIB\llibce.LIB(strchr.asm)
+D:\LIB\llibce.LIB(strtok.asm)
+D:\LIB\llibce.LIB(xtoa.asm)
+D:\TOOLKT12\LIB\os2.LIB(DOSREAD)
+D:\TOOLKT12\LIB\os2.LIB(DOSTRUEGETMESSAGE)
+D:\TOOLKT12\LIB\os2.LIB(DOSPUTMESSAGE)
+D:\TOOLKT12\LIB\os2.LIB(msgseg.asm)
+**** ASSIGN ADDRESSES ****
+  1 segment "NULL" class "BEGDATA" length 1EH bytes
+  2 segment "_DATA" class "DATA" length 28H bytes
+  3 segment "CONST" class "CONST" length 0H bytes
+  4 segment "FAR_BSS" class "FAR_BSS" length 0H bytes
+  5 segment "_BSS" class "BSS" length AH bytes
+  6 segment "c_common" class "BSS" length FFH bytes
+  7 segment "BUFFERS" class "LAST_DATA" length 0H bytes
+  8 segment "LAST_D" class "LAST_DATA" length 0H bytes
+  9 segment "MAINSEG" class "CODE" length 632H bytes
+ 10 segment "_TEXT" class "CODE" length 1A7H bytes
+ 11 segment "END_TEXT" class "CODE" length 0H bytes
+ 12 segment "KEEPSEG" class "CODE" length 5AEH bytes
+ 13 segment "INITSEG" class "CODE" length 3D0H bytes
+ 14 segment "C_ETEXT" class "ENDCODE" length 0H bytes
+ 15 segment "_MSGSEG" class "MSGSEGCODE" length 2CH bytes
+**** PRINT MAP ****
+**** PASS TWO ****
+.\obj\demo.OBJ(.\src\demo.ASM)
+demo.LIB(.\src\strategy.c)
+demo.LIB(.\src\asmutils.ASM)
+demo.LIB(.\src\badcmd.c)
+demo.LIB(.\src\ddutils.c)
+demo.LIB(.\src\init.c)
+demo.LIB(.\src\devhlp.ASM)
+demo.LIB(.\src\gdtmem.c)
+demo.LIB(.\src\lock.c)
+demo.LIB(.\src\ldtmem.c)
+demo.LIB(.\src\prtmsg.c)
+D:\LIB\llibce.LIB(strcpy.asm)
+D:\LIB\llibce.LIB(strlen.asm)
+D:\LIB\llibce.LIB(itoa.asm)
+D:\LIB\llibce.LIB(strchr.asm)
+D:\LIB\llibce.LIB(strtok.asm)
+D:\LIB\llibce.LIB(xtoa.asm)
+D:\TOOLKT12\LIB\os2.LIB(DOSREAD)
+D:\TOOLKT12\LIB\os2.LIB(DOSTRUEGETMESSAGE)
+D:\TOOLKT12\LIB\os2.LIB(DOSPUTMESSAGE)
+D:\TOOLKT12\LIB\os2.LIB(msgseg.asm)
+**** WRITING EXECUTABLE ****
+LINK : warning L4045: name of output file is 'demo.DLL'
